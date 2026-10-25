@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fugitive — Privacy Policy</title><style>body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0b0f15;color:#e8ecf2;line-height:1.65}main{max-width:760px;margin:0 auto;padding:40px 22px 80px}h1{margin-top:0}h2{margin-top:36px;color:#ff5a36;font-size:20px}p,li{color:#c7cedb}table{border-collapse:collapse;width:100%;margin:12px 0}td,th{border:1px solid #263044;padding:8px 10px;text-align:left;vertical-align:top}th{background:#121822}a{color:#ff5a36}.muted{color:#8a94a6}</style></head><body><main>
+<h1>Privacy Policy</h1>
+<p class="muted">App: Fugitive (package com.jaryl.fugitive) · Last updated: 25 October 2026</p>
+<p>Fugitive is a location-based party game. To play, your device shares its location with the other players in your game. This policy explains exactly what is collected, why, who can see it, and how long it is kept. We do not sell data, show ads, or use analytics or tracking SDKs.</p>
+
+<h2>1. What we collect</h2>
+<table><tr><th>Data</th><th>Why</th><th>Who can see it</th><th>Retention</th></tr>
+<tr><td><b>Precise location</b> (latitude, longitude, accuracy, heading, speed) and device battery level</td><td>Core gameplay: showing players on the map, the shrinking zone, catches, proximity alerts.</td><td>Only players in the same lobby, according to the game's visibility rules (e.g. hunters may not be visible to runners).</td><td>Stored while the lobby exists. Deleted when the last player leaves the lobby. Lobbies are periodically purged.</td></tr>
+<tr><td><b>Movement trail</b> (one location sample every ~5 seconds during a game)</td><td>The post-game replay map and stats (distance, top speed).</td><td>Players in the same lobby.</td><td>Deleted when the next round starts or the lobby is deleted.</td></tr>
+<tr><td><b>Display name, emoji avatar, colour</b></td><td>Identify you in the lobby and on the map.</td><td>Players in the same lobby.</td><td>Stored on your device; copied into a lobby only while you are in it.</td></tr>
+<tr><td><b>Chat messages and map pings</b></td><td>In-game communication.</td><td>Players in the same lobby (or your team only).</td><td>Deleted with the lobby.</td></tr>
+<tr><td><b>Anonymous user ID</b></td><td>Lets the server know which lobby records belong to you. No email, phone number or account is required.</td><td>Not shown to anyone.</td><td>Kept by Firebase Authentication until you uninstall the app or clear its data.</td></tr></table>
+
+<h2>2. When location is collected</h2>
+<p>Location is only collected while you are in a lobby or game. During a game, Fugitive runs a foreground service with a visible, persistent notification so location sharing continues when your screen is off. When the game ends or you leave the lobby, location collection stops. Fugitive does <b>not</b> request background location permission and never collects location when you are not playing.</p>
+
+<h2>3. Practice mode</h2>
+<p>Practice games against bots run entirely on your device. No data is sent anywhere.</p>
+
+<h2>4. Service providers</h2>
+<p>Online games use <b>Google Firebase</b> (Realtime Database and Anonymous Authentication) to relay game data between players. Data is processed under Google's <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>. Map tiles are downloaded from <b>OpenFreeMap</b>; like any website, the tile server receives your IP address and the map area being viewed, but not your identity or exact position. Optional QR-code scanning uses the Google Play services code scanner, which processes camera frames on-device.</p>
+
+<h2>5. Security</h2>
+<p>All network traffic is encrypted (HTTPS/TLS). Database security rules ensure only members of a lobby can read it, and each player can only write their own location.</p>
+
+<h2>6. Your choices</h2>
+<ul><li>You can deny location permission; you can still use the virtual joystick in practice mode.</li><li>Leave a lobby at any time to stop sharing and remove your data from it.</li><li>Clearing the app's data or uninstalling removes your local profile and anonymous ID.</li><li>To request deletion of any data, email the address below.</li></ul>
+
+<h2>7. Children</h2>
+<p>Fugitive is not directed at children under 13. Players should agree on safe play areas and never play near traffic.</p>
+
+<h2>8. Changes</h2>
+<p>We will update this page if our practices change and revise the date above.</p>
+
+<h2>9. Contact</h2>
+<p>Questions or deletion requests: <a href="mailto:support@fugitive.app">support@fugitive.app</a></p>
+</main></body></html>
